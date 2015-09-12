@@ -81,40 +81,23 @@ p {
 
 /* header */
 .header-style {
- padding-top: 10px;
+ padding-top: 5px;
  border-bottom-color: rgb(89, 102, 102);
- border-bottom-width: 8px;
+ border-bottom-width: 2px;
  border-bottom-style: solid;
- padding-bottom: 15px;
+ padding-bottom: 2px;
 }
 
 .header-list {
   font-size: 1.6em;
-  padding-top: 55px;
+  padding-top: 10px;
   vertical-align: middle;
 }
 
 .container-body {
-  padding-top: 146px;
+  padding-top: 64px;
   //padding-top: 50px;
 }
-
-/*
-#logo {
-  float: left;
-  margin-right: 10px;
-  font-size: 1.7em;
-  color: white;
-  text-transform: uppercase;
-  letter-spacing: -1px;
-  padding-top: 9px;
-  font-weight: bold;
-  &:hover {
-    color: white;
-    text-decoration: none;
-  }
-}
-*/
 
 /* slick */
 .slick-prev:before
@@ -136,7 +119,8 @@ p {
 
 /* main area */
 .main-area {
-  //margin-top: 100px;
+  margin-top: 1px;
+  padding-top: 1px;
   //background-color: rgb(247, 247, 247);
   background-color: rgb(225, 227, 227)
 }
