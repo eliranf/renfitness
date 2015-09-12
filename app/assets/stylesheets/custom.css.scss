@@ -4,12 +4,14 @@
 /* mixins, variables, etc. */
 
 $gray-medium-light: #eaeaea;
+$gray-light: rgb(122, 122, 126);
 $orange:     rgb(252, 134, 17);
 $dark-blue:  rgb(10, 41, 114);
 $very-dark-blue: rgb(0, 15, 61);
 $dark-grey:  rgb(34, 34, 34);
 $black:      rgb(0, 0, 0);  
 $light-blue: rgb(0, 126, 229);
+$light-light-blue: rgb(0, 153, 255);
 $blue      : rgb(0, 82, 204);
 $grey      : rgb(116, 120, 120);
 
@@ -31,6 +33,7 @@ textarea {
   text-align: center;
   h1 {
     margin-bottom: 10px;
+    color: $dark-grey;
   }
 }
 
@@ -41,21 +44,33 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  //padding-top: 30px;
+  margin-bottom: 20px;
   font-size: 3em;
   letter-spacing: -2px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   text-align: center;
+  color: $dark-grey;
 }
 
 h2 {
-  font-size: 1.2em;
+  font-size: 1.6em;
   letter-spacing: -1px;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   text-align: center;
   font-weight: normal;
   color: $gray-light;
   //color: $light-blue;
+}
+
+h3 {
+  font-size: 2em;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+  text-align: center;
+  font-weight: normal;
+  color: $blue;
+  
 }
 
 p {
@@ -101,6 +116,24 @@ p {
 }
 */
 
+/* slick */
+.slick-prev:before
+.slick-next:before
+.slick-dots li a:before
+
+.slides {
+  background-color: black;
+}
+.slick-slider {
+  padding: 50px;
+  background-color: black;
+}
+
+.photos-picker {
+  margin-top: 25px;
+  //background-color: black;
+}
+
 /* main area */
 .main-area {
   //margin-top: 100px;
@@ -108,7 +141,42 @@ p {
   background-color: rgb(225, 227, 227)
 }
 
+.slide {
+  //padding-top: 100px;
+  //background-color: black;
+}
+
 /* footer */
+
+.photos-nav {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: $light-blue;
+  a {
+    color: $light-blue;
+    &:hover {
+      color: $orange;
+      text-decoration: none;
+    }
+  }
+  ul {
+    text-align: center;
+    li {
+      background-color: $dark-grey;
+      font-size: 2em;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      padding-left: 20px;
+      padding-right: 20px;
+      margin-left: 6px;
+      margin-right: 6px;
+      border: 5px solid $orange;
+      font-weight: bold;
+      display:inline;
+    }
+  }
+}
+
 
 footer {
   margin-top: 45px;
@@ -118,7 +186,7 @@ footer {
   a {
     color: white;
     &:hover {
-      color: $gray-light;
+      color: $orange;
     }
   }
   small {

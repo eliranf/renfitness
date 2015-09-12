@@ -4,8 +4,16 @@
   </small>
   <nav>
     <ul>
-      <li><%= link_to "Facebook", '#' %></li>
-      <li><%= link_to "צור קשר",   '#' %></li>
+      <li>
+        <%= link_to image_tag("http://res.cloudinary.com/eliranf/image/upload/v1442071413/FB-f-Logo__blue_29_boo46g.png", alt: "Logo"),
+                            'https://www.facebook.com/Ren-Fitness-499917123485606/timeline/' %>
+        <%= link_to "Facebook", 'https://www.facebook.com/Ren-Fitness-499917123485606/timeline/' %>
+      </li>
+      <li>
+        <%= link_to image_tag("http://res.cloudinary.com/eliranf/image/upload/v1442073238/blue-mail-icon-small-2_xs8qvz.png", alt: "Logo", size:"41x29"),
+                            'https://www.facebook.com/Ren-Fitness-499917123485606/timeline/' %>
+        <%= link_to "צור קשר", contact_path %>
+      </li>
     </ul>
   </nav>
 </footer>
