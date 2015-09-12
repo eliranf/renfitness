@@ -1,0 +1,139 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+/* mixins, variables, etc. */
+
+$gray-medium-light: #eaeaea;
+$orange:     rgb(252, 134, 17);
+$dark-blue:  rgb(10, 41, 114);
+$very-dark-blue: rgb(0, 15, 61);
+$dark-grey:  rgb(34, 34, 34);
+$black:      rgb(0, 0, 0);  
+$light-blue: rgb(0, 126, 229);
+$blue      : rgb(0, 82, 204);
+$grey      : rgb(116, 120, 120);
+
+/* universal */
+
+body {
+  background-color: $dark-blue;
+}
+
+section {
+  overflow: auto;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.center {
+  text-align: center;
+  h1 {
+    margin-bottom: 10px;
+  }
+}
+
+/* typography */
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1;
+}
+
+h1 {
+  //padding-top: 30px;
+  font-size: 3em;
+  letter-spacing: -2px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.2em;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: normal;
+  color: $gray-light;
+  //color: $light-blue;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.7em;
+}
+
+
+/* header */
+.header-style {
+ padding-top: 10px;
+ border-bottom-color: rgb(89, 102, 102);
+ border-bottom-width: 8px;
+ border-bottom-style: solid;
+ padding-bottom: 15px;
+}
+
+.header-list {
+  font-size: 1.6em;
+  padding-top: 55px;
+  vertical-align: middle;
+}
+
+.container-body {
+  padding-top: 146px;
+  //padding-top: 50px;
+}
+
+/*
+#logo {
+  float: left;
+  margin-right: 10px;
+  font-size: 1.7em;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  padding-top: 9px;
+  font-weight: bold;
+  &:hover {
+    color: white;
+    text-decoration: none;
+  }
+}
+*/
+
+/* main area */
+.main-area {
+  //margin-top: 100px;
+  //background-color: rgb(247, 247, 247);
+  background-color: rgb(225, 227, 227)
+}
+
+/* footer */
+
+footer {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid $gray-medium-light;
+  color: white;
+  a {
+    color: white;
+    &:hover {
+      color: $gray-light;
+    }
+  }
+  small {
+    float: left;
+  }
+  ul {
+    float: right;
+    list-style: none;
+    li {
+      float: left;
+      margin-left: 15px;
+    }
+  }
+}
+
+/*
+logo: http://oi62.tinypic.com/3145lwz.jpg
+*/
