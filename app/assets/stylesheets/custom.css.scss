@@ -55,7 +55,7 @@ h1 {
 h2 {
   font-size: 1.6em;
   letter-spacing: -1px;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
   text-align: center;
   font-weight: normal;
   color: $gray-light;
@@ -183,6 +183,22 @@ footer {
       float: left;
       margin-left: 15px;
     }
+  }
+}
+
+/* Business */
+.business-list {
+  ul {
+    white-space: nowrap;
+  }
+
+  ul, li {
+    list-style: none;
+    display: inline;
+  }
+  
+  li {
+    margin-right: 20px;
   }
 }
 
