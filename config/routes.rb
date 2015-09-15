@@ -6,6 +6,8 @@ Rails.application.routes.draw do
   get 'contact'  => 'pages#contact'
   get 'business' => 'pages#business'
   
+  get 'videos/pregnancy' => 'videos#pregnancy'
+  
   get 'photos/trx' => 'photos#trx'
 
 end
