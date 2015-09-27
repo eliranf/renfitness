@@ -14,6 +14,7 @@ $light-blue: rgb(0, 126, 229);
 $light-light-blue: rgb(0, 153, 255);
 $blue      : rgb(0, 82, 204);
 $grey      : rgb(116, 120, 120);
+$blue-header: rgb(40, 47, 122);
 
 /* universal */
 
@@ -34,6 +35,7 @@ textarea {
   h1 {
     margin-bottom: 10px;
     color: $dark-grey;
+    font-size: 3.3em;
   }
 }
 
@@ -45,7 +47,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   margin-bottom: 20px;
-  font-size: 3em;
+  
   letter-spacing: -2px;
   margin-bottom: 40px;
   text-align: center;
@@ -58,7 +60,8 @@ h2 {
   margin-bottom: 30px;
   text-align: center;
   font-weight: normal;
-  color: $gray-light;
+  //color: $gray-light;
+  color: rgb(42, 45, 74);
   //color: $light-blue;
 }
 
@@ -201,6 +204,15 @@ footer {
   
   li {
     margin-right: 20px;
+  }
+}
+
+/* about */
+.about-text {
+  text-align: right;
+  
+  p {
+    font-size: 1.2em;
   }
 }
 
