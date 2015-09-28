@@ -216,6 +216,45 @@ footer {
   }
 }
 
+/* videos */
+.videos-text {
+  text-align: right;
+  
+  p {
+    font-size: 1.2em;
+  }
+}
+
+.video-container {
+  overflow: auto;
+  margin-left: 100px;
+  border-style: solid;
+  border-color: rgb(206, 207, 217);
+  padding: 10px;
+  margin-bottom: 20px;
+  
+  h3 {
+    font-size: 2em;
+    letter-spacing: -1px;
+    margin-bottom: 5px;
+    text-align: right;
+    font-weight: normal;
+    color: $blue;
+  }
+}
+
+.video-container-src {
+  float: left
+}
+
+.video-container-text {
+  text-align: right;
+  
+  p {
+    font-size: 1.2em;
+  }
+}
+
 /*
 logo: http://oi62.tinypic.com/3145lwz.jpg
 */
