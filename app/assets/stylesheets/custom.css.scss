@@ -229,9 +229,11 @@ footer {
   overflow: auto;
   margin-left: 100px;
   border-style: solid;
-  border-color: rgb(206, 207, 217);
+  border-width: 2px;
+  border-color: #40478F;
   padding: 10px;
   margin-bottom: 20px;
+  box-shadow:2px 2px 5px #02094F;
   
   h3 {
     font-size: 2em;
