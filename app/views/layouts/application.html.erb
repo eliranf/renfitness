@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= full_title(yield(:title)) %></title>
+    <title>Ren Fitness & Nutrition</title>
     <%= stylesheet_link_tag "application", media: "all",
                                            "data-turbolinks-track" => true %>
     <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
@@ -28,11 +28,39 @@
   </head>
   <body>
     <%= render 'layouts/header' %>
-    
+
     <div class="page-header">
       <img src="http://res.cloudinary.com/eliranf/image/upload/v1443516622/396837102adec3cf_Running-KimKrueger.xxxlarge_2x_1_thcgrt.jpg" style="width: 100%; height: 240px; opacity:0.8; filter:alpha(opacity=80);">
     </div>
 
+    <div class="page-header-text">
+      <% if yield(:title) == "home" %>
+        <h1 class="title-home">
+          רין פרידמן - מדריכת כושר ותזונאית מוסמכת
+        </h1>
+      <% else %><% if yield(:title) == "videos" %>
+        <h1 class="title-videos">
+          תכניות אימונים
+        </h1>
+      <% else %><% if yield(:title) == "photos" %>
+        <h1 class="title-photos">
+          גלרית תמונות
+        </h1>
+      <% else %><% if yield(:title) == "about" %>
+        <h1 class="title-about">
+          רין פרידמן - מדריכת כושר ותזונאית מוסמכת
+        </h1>
+      <% else %><% if yield(:title) == "business" %>
+        <h1 class="title-business">
+          לקוחות עסקיים
+        </h1>
+      <% else %><% if yield(:title) == "contact" %>
+        <h1 class="title-contact">
+          אמצעי תקשורת
+        </h1>
+      <% end %><% end %><% end %><% end %><% end %><% end %>
+    </div>
+  
     <div class="container container-body">
       <%= yield %>
 
