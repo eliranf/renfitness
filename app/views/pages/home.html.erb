@@ -1,4 +1,23 @@
 <div class="center jumbotron main-area">
+  
+  <script>
+    var imgArray = []
+
+    imgArray[0] = "http://res.cloudinary.com/eliranf/image/upload/v1443363485/IMG-20150927-WA0010_1_wu7i0m.jpg";
+    imgArray[1] = "http://res.cloudinary.com/eliranf/image/upload/v1442061146/ren_profile_ivbpfs.jpg";
+    imgArray[2] = "http://res.cloudinary.com/eliranf/image/upload/v1442053859/3_qx5vrt.jpg";
+    //imgArray[3] = "image4.jpg"
+    
+    var i = -1;
+    
+    setInterval(function(){
+    	$(".img-home-left img"  ).fadeOut(400, function(){ $(this).attr("src", imgArray[(i-1) % imgArray.length]).fadeIn(400); });
+      $(".img-home-middle img").fadeOut(400, function(){ $(this).attr("src", imgArray[ i    % imgArray.length]).fadeIn(400); });
+      $(".img-home-right img" ).fadeOut(400, function(){ $(this).attr("src", imgArray[(i+1) % imgArray.length]).fadeIn(400); });
+    	i++;
+    }, 3000);
+  </script>
+  
   <h1>
     רין פרידמן - מדריכת כושר ותזונאית מוסמכת
   </h1>
@@ -6,15 +25,22 @@
   <h2>
     אימונים אישיים, בקבוצות ובעסקים
   </br>
-    ייעוץ תזונתי    
-    / TRX /
+    TRX /
     פילאטיס / אירובי / עיצוב וחיטוב
+  </br>
+  ייעוץ תזונתי    
   </h2>
   
-  <p>
-    <img src="http://res.cloudinary.com/eliranf/image/upload/v1443363485/IMG-20150927-WA0010_1_wu7i0m.jpg" style="height:400px; width:225px; opacity:0.8; filter:alpha(opacity=80);" alt="Ren_pic">
-    <img src="http://res.cloudinary.com/eliranf/image/upload/v1442061146/ren_profile_ivbpfs.jpg" style="height:400px; width:400px" alt="Ren_pic">
-    <img src="http://res.cloudinary.com/eliranf/image/upload/v1442053859/3_qx5vrt.jpg" style="height:400px; width:225px; opacity:0.8; filter:alpha(opacity=80);" alt="Ren_pic">
-  </p>
+  <div class="gen-container">
+    <div class="img-home img-home-left">
+      <img src="http://res.cloudinary.com/eliranf/image/upload/v1443363485/IMG-20150927-WA0010_1_wu7i0m.jpg" style="height:400px; width:225px; opacity:0.6; filter:alpha(opacity=60);" alt="Ren_pic">
+    </div>
+    <div class="img-home img-home-middle">
+      <img src="http://res.cloudinary.com/eliranf/image/upload/v1442061146/ren_profile_ivbpfs.jpg" style="height:400px; width:400px" alt="Ren_pic">
+    </div>
+    <div class="img-home img-home-right">
+      <img src="http://res.cloudinary.com/eliranf/image/upload/v1442053859/3_qx5vrt.jpg" style="height:400px; width:225px; opacity:0.6; filter:alpha(opacity=60);" alt="Ren_pic">
+    </div>
+  </div>
 
 </div>
