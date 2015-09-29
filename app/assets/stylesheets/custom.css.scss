@@ -20,7 +20,8 @@ $blue-border: #40478F;
 /* universal */
 
 .page-header {
-  margin: 0px;
+  margin-top: 52px;
+  margin-bottom: 0px;
   border-bottom-style: none;
   padding: 0px;
 }
@@ -75,7 +76,7 @@ h1 {
 .title-videos   { background-color: green; }
 .title-photos   { background-color: $orange; }
 .title-about    { background-color: #6E22A8; }
-.title-contact  { background-color: red; }
+.title-contact  { background-color: #911103; }
 .title-business { background-color: black; }
 
 h2 {
