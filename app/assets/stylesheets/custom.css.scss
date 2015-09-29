@@ -79,6 +79,13 @@ h1 {
 .title-contact  { background-color: #911103; }
 .title-business { background-color: black; }
 
+.header-nav-title-home     { color: #1486F7; }
+.header-nav-title-videos   { color: green; }
+.header-nav-title-photos   { color: $orange; }
+.header-nav-title-about    { color: #6E22A8; }
+.header-nav-title-contact  { color: #911103; }
+.header-nav-title-business { color: black; }
+
 h2 {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -121,8 +128,17 @@ p {
  margin-bottom: 0px;
 }
 
+.navbar-nav {
+  color: red;  
+}
+
+.nav {
+  color: red;
+}
+
 .header-list {
   font-size: 1.6em;
+  color: red;
   padding-top: 10px;
   vertical-align: middle;
 }
@@ -222,8 +238,6 @@ footer {
 
 /* Business */
 .business-list {
-  margin-top: 10px;
-  margin-bottom: 10px;
   ul {
     white-space: nowrap;
   }
